@@ -94,6 +94,7 @@ GEM
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
     posix-spawn (0.3.12)
+    programr (0.0.1)
     puma (3.6.2)
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
@@ -186,6 +187,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   mail_form
+  programr
   puma (~> 3.0)
   pygments.rb
   rails (~> 5.0.0, >= 5.0.0.1)

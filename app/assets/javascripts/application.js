@@ -14,3 +14,22 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+  $('#query').on("keydown", function(event) {
+  	if(event.keyCode === 13){
+  		$.ajax({
+	      	url: '/ask_newton',
+	      	type: 'json',
+	      	method: 'get',
+	      	data: { query: $('#query').val() },
+	      	success: function(data) {
+		        $('.newtonbot-response').removeClass('hide');
+		        $('#newton-response').html(data['response']);
+		        $('#query').val('');
+		    }
+	    });
+  	}
+    
+  });
+});
