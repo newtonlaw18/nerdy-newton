@@ -3,7 +3,7 @@
   <head>
     <title>NerdyNewton - Foodie, Developer</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,7 +12,7 @@
 
   <body>
   	<header id="main_navigation" class="clearfix">
-		<a href="index.html" class="name">Nerdy Newton</a>
+		<a href="/" class="name">Nerdy Newton</a>
 		<nav>
 			<%= link_to "Blog", posts_path %>
 			
@@ -21,5 +21,13 @@
 		</nav>
 	</header>
     <%= yield %>
+    <footer id="main_footer">
+		<p class="copyright">&copy;2016 Nerdy Newton</p>
+		<nav>
+			<a href="https://twitter.com/newtonlaw18" target="blank"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.facebook.com/newtonlaw18" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="https://github.com/newtonlaw18" target="blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+		</nav>
+	</footer>
   </body>
 </html>
